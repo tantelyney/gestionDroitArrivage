@@ -72,11 +72,13 @@ namespace gestionDroitArrivage
             var plotModel1 = new PlotModel { Title = "Statistique du nombre d'arrivage mensuel" };
             var plotModel2 = new PlotModel { Title = "Statistique des recettes mensuels" };
 
-            string query1 = "SELECT MONTH(arrivage.date_arrivage) AS mois, COUNT(arrivage.num_arrivage) AS nbArrivage " +
-                "FROM arrivage GROUP BY MONTH(arrivage.date_arrivage)";
-            string query2 = "SELECT MONTH(arrivage.date_arrivage) AS mois, SUM(payement.montant) AS recette " +
-                "FROM arrivage,payement WHERE (DATE(arrivage.date_arrivage)=DATE(payement.date_arrivage)) " +
-                "GROUP BY MONTH(arrivage.date_arrivage)";
+            string query1 = "SELECT MONTH(arrivage.date_arrivage) AS mois,  COUNT(arrivage.num_arrivage) AS nbArrivage, " +
+                "YEAR(arrivage.date_arrivage) AS annee FROM arrivage GROUP BY MONTH(arrivage.date_arrivage) " +
+                "HAVING annee=YEAR(CURRENT_DATE)";
+            string query2 = "SELECT MONTH(arrivage.date_arrivage) AS mois, SUM(payement.montant) AS recette, " +
+                "YEAR(arrivage.date_arrivage) AS annee FROM arrivage,payement " +
+                "WHERE (DATE(arrivage.date_arrivage)=DATE(payement.date_arrivage)) " +
+                "GROUP BY MONTH(arrivage.date_arrivage) HAVING annee=YEAR(CURRENT_DATE)";
             string query3 = "SELECT AVG(payement.montant) AS moyenne FROM payement " +
                 "WHERE MONTH(payement.date_payement)=(MONTH(CURRENT_DATE))";
             DataTable tab1 = new DataTable();

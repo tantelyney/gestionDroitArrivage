@@ -67,3 +67,4 @@ C:\Users\MAMI\source\repos\gestionDroitArrivage\gestionDroitArrivage\obj\Debug\n
 C:\Users\MAMI\source\repos\gestionDroitArrivage\gestionDroitArrivage\obj\Debug\net8.0-windows\gestionDroitArrivage.UCvehicule.resources
 C:\Users\MAMI\source\repos\gestionDroitArrivage\gestionDroitArrivage\obj\Debug\net8.0-windows\gestionDroitArrivage.Resources.Resource1.resources
 C:\Users\MAMI\source\repos\gestionDroitArrivage\gestionDroitArrivage\obj\Debug\net8.0-windows\gestionDroitArrivage.Resources.Resource2.resources
+C:\Users\MAMI\source\repos\gestionDroitArrivage\gestionDroitArrivage\obj\Debug\net8.0-windows\gestionDroitArrivage.sourcelink.json

@@ -171,13 +171,13 @@ namespace gestionDroitArrivage
             else if (champRefMarchandise.Text == "" || champLibelle.Text == "" || comboBoxRefDroit.Text == "")
             {
                 MessageBox.Show("Veuillez remplir tous les champs !", "Gestion de droit d'arrivage", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            }/*
             else if (!int.TryParse(champTarif.Text, out _))
             {
                 MessageBox.Show("Valeur invalide. La valeur du champ tarif doit être un entier !", "Erreur - Gestion de droit d'arrivage", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 champTarif.Clear();
                 champTarif.Focus();
-            }
+            }*/
             else
             {
                 var refMarchandise = Convert.ToString(dataGridView1.CurrentRow.Cells[0].Value.ToString());

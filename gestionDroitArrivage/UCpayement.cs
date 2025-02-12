@@ -85,7 +85,7 @@ namespace gestionDroitArrivage
             else
             {
                 string query = "SELECT * FROM payement WHERE num_payement LIKE '%" + textBoxRecherche.Text + "%' " +
-                    "OR date_payement LIKE '" + textBoxRecherche.Text + "'";
+                    "OR date_payement LIKE '%" + textBoxRecherche.Text + "%'";
                 connectionDb.creerConnection();
                 DataTable table = connectionDb.recuperData(query);
                 connectionDb.fermerConnection();

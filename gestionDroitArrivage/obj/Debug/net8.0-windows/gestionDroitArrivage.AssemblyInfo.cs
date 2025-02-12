@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gestionDroitArrivage")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f9c7e23025ad5d072f9e5a4edf8a87bf583c55f")]
 [assembly: System.Reflection.AssemblyProductAttribute("gestionDroitArrivage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gestionDroitArrivage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
